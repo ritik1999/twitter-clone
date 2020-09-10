@@ -11,8 +11,16 @@ function TweetBox() {
                     <Avatar src="https://pbs.twimg.com/profile_images/865695281492381696/81tOUsc7_400x400.jpg" />
                     <input placeholder="What's happening ?" type="text" />   
                 </div>
-                <input placeholder="Enter image URL" type="text"  className="tweetbox__imageinput"/>
-                <Button className="tweetbox__button">Tweet</Button>
+                
+                <input 
+                placeholder="Enter image URL"
+                type="text"  
+                className="tweetbox__imageinput" 
+                />
+                
+                <Button className="tweetbox__button">
+                    Tweet
+                </Button>
                 
             </form>
         </div>
