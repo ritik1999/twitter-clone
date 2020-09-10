@@ -19,23 +19,24 @@ function Post({
     return (
         <div className="post">
             <div className="post__avatar">
-                <Avatar src="https://pbs.twimg.com/profile_images/865695281492381696/81tOUsc7_400x400.jpg" />
+                <Avatar src={avatar} />
             </div>
             <div className="post_body">
                 <div className="post__header">
                     <div className="post__headerText">
                         <h3>
-                            Ritik Agarwal{" "}
+                            {displayName}{" "}
                             <span className="post__headerSpecial">
-                                <VerifiedUserIcon className="post__badge"/>
+                               {verified && <VerifiedUserIcon className="post__badge"/>} @
+                               {username}
                             </span>
                         </h3>
                     </div>
                     <div className="post__headerDescription">
-                        <p>I challenge you to build a Twitter Clone</p>
+                        <p>{text}</p>
                     </div>
                 </div>
-                <img src="" alt="" />   
+                <img src={image} alt="Loading.." />   
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize="small" />
                     <RepeatIcon fontSize="small" />
